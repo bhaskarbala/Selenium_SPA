@@ -1,41 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[To Connected to DataBase]]>
+    </line>
+    <line>
+      <![CDATA[Set To Property in WebDriver]]>
+    </line>
+    <line>
+      <![CDATA[Get a Url]]>
+    </line>
+    <line>
+      <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+    </line>
+    <line>
+      <![CDATA[get the Username From properties file]]>
+    </line>
+    <line>
+      <![CDATA[get the password from properties file and pass GUI]]>
+    </line>
+    <line>
+      <![CDATA[Click on login button]]>
+    </line>
+    <line>
+      <![CDATA[Get the Title frome HomePage ]]>
+    </line>
+    <line>
+      <![CDATA[To compare to ActualResult and ExpectedResult in Homepaga]]>
+    </line>
+    <line>
+      <![CDATA[click on the logout button]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
+    </line>
+    <line>
+      <![CDATA[Set To Property in WebDriver]]>
+    </line>
+    <line>
+      <![CDATA[Get a Url]]>
+    </line>
+    <line>
+      <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+    </line>
+    <line>
+      <![CDATA[get the Username From properties file]]>
+    </line>
+    <line>
+      <![CDATA[get the password from properties file and pass GUI]]>
+    </line>
+    <line>
+      <![CDATA[Click on login button]]>
+    </line>
+    <line>
+      <![CDATA[Identify the Element in GUI and Stored WebElment ]]>
+    </line>
+    <line>
+      <![CDATA[Create Selecte Class and pass the WebElemnt reffence]]>
+    </line>
+    <line>
+      <![CDATA[Take Help of Select class reffence by using selectByIndex]]>
+    </line>
+    <line>
+      <![CDATA[click on the logout button]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
+    </line>
+    <line>
+      <![CDATA[Disconnected to Data Base]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46660" started-at="2019-03-09T14:41:06Z" finished-at="2019-03-09T14:41:53Z">
+  <suite name="Default suite" duration-ms="147096" started-at="2019-03-10T03:26:12Z" finished-at="2019-03-10T03:28:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46660" started-at="2019-03-09T14:41:06Z" finished-at="2019-03-09T14:41:53Z">
-      <class name="com.actitime.testScript.LoginPage">
-        <test-method status="PASS" signature="configBS()[pri:0, instance:com.actitime.testScript.LoginPage@7cd62f43]" name="configBS" is-config="true" duration-ms="47" started-at="2019-03-09T14:41:06Z" finished-at="2019-03-09T14:41:06Z">
+    <test name="Default test" duration-ms="147096" started-at="2019-03-10T03:26:12Z" finished-at="2019-03-10T03:28:39Z">
+      <class name="com.actitime.testScript.LoginPageTest">
+        <test-method status="PASS" signature="configBS()[pri:0, instance:com.actitime.testScript.LoginPageTest@6d4b1c02]" name="configBS" is-config="true" duration-ms="172" started-at="2019-03-10T03:26:11Z" finished-at="2019-03-10T03:26:12Z">
           <reporter-output>
+            <line>
+              <![CDATA[To Connected to DataBase]]>
+            </line>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method status="PASS" signature="LunchBrowser()[pri:0, instance:com.actitime.testScript.LoginPage@7cd62f43]" name="LunchBrowser" is-config="true" duration-ms="7701" started-at="2019-03-09T14:41:06Z" finished-at="2019-03-09T14:41:14Z">
+        <test-method status="PASS" signature="LunchBrowser()[pri:0, instance:com.actitime.testScript.LoginPageTest@6d4b1c02]" name="LunchBrowser" is-config="true" duration-ms="27152" started-at="2019-03-10T03:26:12Z" finished-at="2019-03-10T03:26:39Z">
           <reporter-output>
+            <line>
+              <![CDATA[Set To Property in WebDriver]]>
+            </line>
+            <line>
+              <![CDATA[Get a Url]]>
+            </line>
           </reporter-output>
         </test-method> <!-- LunchBrowser -->
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.testScript.LoginPage@7cd62f43]" name="preCondition" is-config="true" duration-ms="29985" started-at="2019-03-09T14:41:14Z" finished-at="2019-03-09T14:41:44Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.testScript.LoginPageTest@6d4b1c02]" name="preCondition" is-config="true" duration-ms="29860" started-at="2019-03-10T03:26:39Z" finished-at="2019-03-10T03:27:09Z">
           <reporter-output>
+            <line>
+              <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+            </line>
+            <line>
+              <![CDATA[get the Username From properties file]]>
+            </line>
+            <line>
+              <![CDATA[get the password from properties file and pass GUI]]>
+            </line>
+            <line>
+              <![CDATA[Click on login button]]>
+            </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="VerifyPageHomePageTitle()[pri:0, instance:com.actitime.testScript.LoginPage@7cd62f43]" name="VerifyPageHomePageTitle" duration-ms="3324" started-at="2019-03-09T14:41:44Z" finished-at="2019-03-09T14:41:47Z">
+        <test-method status="PASS" signature="VerifyPageHomePageTitle()[pri:0, instance:com.actitime.testScript.LoginPageTest@6d4b1c02]" name="VerifyPageHomePageTitle" duration-ms="736" started-at="2019-03-10T03:27:09Z" finished-at="2019-03-10T03:27:10Z">
           <reporter-output>
+            <line>
+              <![CDATA[Get the Title frome HomePage ]]>
+            </line>
+            <line>
+              <![CDATA[To compare to ActualResult and ExpectedResult in Homepaga]]>
+            </line>
           </reporter-output>
         </test-method> <!-- VerifyPageHomePageTitle -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.testScript.LoginPage@7cd62f43]" name="postCondition" is-config="true" duration-ms="4948" started-at="2019-03-09T14:41:47Z" finished-at="2019-03-09T14:41:52Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.testScript.LoginPageTest@6d4b1c02]" name="postCondition" is-config="true" duration-ms="8066" started-at="2019-03-10T03:27:10Z" finished-at="2019-03-10T03:27:18Z">
           <reporter-output>
+            <line>
+              <![CDATA[click on the logout button]]>
+            </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="closeToBrowser()[pri:0, instance:com.actitime.testScript.LoginPage@7cd62f43]" name="closeToBrowser" is-config="true" duration-ms="591" started-at="2019-03-09T14:41:52Z" finished-at="2019-03-09T14:41:53Z">
+        <test-method status="PASS" signature="closeToBrowser()[pri:0, instance:com.actitime.testScript.LoginPageTest@6d4b1c02]" name="closeToBrowser" is-config="true" duration-ms="609" started-at="2019-03-10T03:27:18Z" finished-at="2019-03-10T03:27:18Z">
           <reporter-output>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeToBrowser -->
-        <test-method status="PASS" signature="configAS()[pri:0, instance:com.actitime.testScript.LoginPage@7cd62f43]" name="configAS" is-config="true" duration-ms="0" started-at="2019-03-09T14:41:53Z" finished-at="2019-03-09T14:41:53Z">
+        <test-method status="PASS" signature="configAS()[pri:0, instance:com.actitime.testScript.LoginPageTest@6d4b1c02]" name="configAS" is-config="true" duration-ms="0" started-at="2019-03-10T03:28:39Z" finished-at="2019-03-10T03:28:39Z">
           <reporter-output>
+            <line>
+              <![CDATA[Disconnected to Data Base]]>
+            </line>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.actitime.testScript.LoginPage -->
+      </class> <!-- com.actitime.testScript.LoginPageTest -->
+      <class name="com.actitime.testScript.HomPageTest">
+        <test-method status="PASS" signature="LunchBrowser()[pri:0, instance:com.actitime.testScript.HomPageTest@6093dd95]" name="LunchBrowser" is-config="true" duration-ms="22749" started-at="2019-03-10T03:27:18Z" finished-at="2019-03-10T03:27:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Set To Property in WebDriver]]>
+            </line>
+            <line>
+              <![CDATA[Get a Url]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LunchBrowser -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.actitime.testScript.HomPageTest@6093dd95]" name="preCondition" is-config="true" duration-ms="39644" started-at="2019-03-10T03:27:41Z" finished-at="2019-03-10T03:28:21Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+            </line>
+            <line>
+              <![CDATA[get the Username From properties file]]>
+            </line>
+            <line>
+              <![CDATA[get the password from properties file and pass GUI]]>
+            </line>
+            <line>
+              <![CDATA[Click on login button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="corporateNameEditDropDown()[pri:0, instance:com.actitime.testScript.HomPageTest@6093dd95]" name="corporateNameEditDropDown" duration-ms="8563" started-at="2019-03-10T03:28:21Z" finished-at="2019-03-10T03:28:29Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Identify the Element in GUI and Stored WebElment ]]>
+            </line>
+            <line>
+              <![CDATA[Create Selecte Class and pass the WebElemnt reffence]]>
+            </line>
+            <line>
+              <![CDATA[Take Help of Select class reffence by using selectByIndex]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- corporateNameEditDropDown -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.actitime.testScript.HomPageTest@6093dd95]" name="postCondition" is-config="true" duration-ms="8831" started-at="2019-03-10T03:28:29Z" finished-at="2019-03-10T03:28:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[click on the logout button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="closeToBrowser()[pri:0, instance:com.actitime.testScript.HomPageTest@6093dd95]" name="closeToBrowser" is-config="true" duration-ms="665" started-at="2019-03-10T03:28:38Z" finished-at="2019-03-10T03:28:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeToBrowser -->
+      </class> <!-- com.actitime.testScript.HomPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

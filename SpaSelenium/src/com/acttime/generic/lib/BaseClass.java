@@ -6,6 +6,9 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -25,20 +28,25 @@ public class BaseClass {
 	
 	@BeforeSuite
 	public void configBS() {
-		System.out.println("connected to DataBAse");
+		Reporter.log("To Connected to DataBase");
 		
 	}
 	
 	
 	
 	@org.testng.annotations.BeforeClass
-	public void LunchBrowser() {
+	public void LunchBrowser() throws Throwable {
+		Reporter.log("Set To Property in WebDriver");
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+""
 				+ "./Resours/chromedriver.exe"); 
 		driver=new ChromeDriver();
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+	
+			driver.get(read.getPropertyKeyValue("Url"));
+			Reporter.log("Get a Url");
+	
 	
 	}
 	
@@ -49,11 +57,16 @@ public class BaseClass {
 	public void preCondition() {
 		
 		try {
-			driver.get(read.getPropertyKeyValue("Url"));
+			Reporter.log("Create WebDriverWiat it will wait for Visiable of Element");
+			WebDriverWait wait=new WebDriverWait(driver,30);
+			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//div[@class='login']"))));
+			Reporter.log("get the Username From properties file");
 			driver.findElement(By.name("ctl00$ContentPlaceHolder2$txtUserName")).sendKeys(read.getPropertyKeyValue("Username"));
+			Reporter.log("get the password from properties file and pass GUI");
 			driver.findElement(By.name("ctl00$ContentPlaceHolder2$txtPassword")).sendKeys(read.getPropertyKeyValue("Password"));
+			Reporter.log("Click on login button");
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
-			Thread.sleep(3000);
+		
 		} catch (Throwable e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
@@ -63,23 +76,22 @@ public class BaseClass {
 	}
 		@AfterMethod
 		public void postCondition() {
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-			System.out.println(e.getMessage());
-				e.printStackTrace();
-			}
-			driver.findElement(By.linkText("Logout")).click();
+		
+				Reporter.log("click on the logout button");
+				driver.findElement(By.linkText("Logout")).click();
+		
+		
 		}
 		@AfterClass
 		public void closeToBrowser()
 		{
+			Reporter.log("Close the browser");
 			driver.close();
 		}
 
 		@AfterSuite
 		public void configAS() {
-			System.out.println("Disconnected to Data Base");
+		Reporter.log("Disconnected to Data Base");
 		
 		}
 

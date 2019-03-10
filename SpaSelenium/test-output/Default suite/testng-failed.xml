@@ -3,12 +3,28 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.actitime.testScript.LoginPage">
+      <class name="com.actitime.testScript.HomPageTest">
         <methods>
-          <include name="VerifyPageHomePageTitle"/>
+          <include name="postCondition"/>
+          <include name="closeToBrowser"/>
+          <include name="configAS"/>
+          <include name="LunchBrowser"/>
+          <include name="preCondition"/>
+          <include name="corporateNameEditDropDown"/>
           <include name="configBS"/>
         </methods>
-      </class> <!-- com.actitime.testScript.LoginPage -->
+      </class> <!-- com.actitime.testScript.HomPageTest -->
+      <class name="com.actitime.testScript.LoginPageTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="closeToBrowser"/>
+          <include name="configAS"/>
+          <include name="LunchBrowser"/>
+          <include name="VerifyPageHomePageTitle"/>
+          <include name="preCondition"/>
+          <include name="configBS"/>
+        </methods>
+      </class> <!-- com.actitime.testScript.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
