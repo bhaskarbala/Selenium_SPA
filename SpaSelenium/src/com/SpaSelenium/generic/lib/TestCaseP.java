@@ -1,4 +1,4 @@
-package com.acttime.generic.lib;
+package com.SpaSelenium.generic.lib;
 
 import java.util.concurrent.TimeUnit;
 

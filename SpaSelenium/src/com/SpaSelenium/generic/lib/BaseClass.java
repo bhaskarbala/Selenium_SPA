@@ -1,11 +1,16 @@
-package com.acttime.generic.lib;
+package com.SpaSelenium.generic.lib;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
@@ -93,6 +98,12 @@ public class BaseClass {
 		public void configAS() {
 		Reporter.log("Disconnected to Data Base");
 		
+		}
+		public static void getScreenShot() throws Throwable {
+			EventFiringWebDriver efd=new EventFiringWebDriver(driver);
+			File src=efd.getScreenshotAs(OutputType.FILE);
+			File dsrc=new File("./ScreenShot/test.png");
+			FileUtils.copyFile(src, dsrc);
 		}
 
 	
