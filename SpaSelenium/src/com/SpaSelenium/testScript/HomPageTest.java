@@ -10,7 +10,8 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.SpaSelenium.generic.lib.BaseClass;
-@Listeners
+
+@Listeners(com.SpaSelenium.generic.lib.ListenerImple.class)
 public class HomPageTest extends BaseClass{
 	@Test
 	public void corporateNameEditDropDown() throws Throwable {

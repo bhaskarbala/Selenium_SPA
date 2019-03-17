@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SpaSelenium.testScript.LoginPageTest">
+      <class name="com.SpaSelenium.testScript.organizationPage">
         <methods>
-          <include name="VerifyPageHomePageTitle"/>
           <include name="configAS"/>
           <include name="preCondition"/>
           <include name="configBS"/>
           <include name="LunchBrowser"/>
           <include name="closeToBrowser"/>
+          <include name="organizationPageShouldDisplyed"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- com.SpaSelenium.testScript.LoginPageTest -->
+      </class> <!-- com.SpaSelenium.testScript.organizationPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

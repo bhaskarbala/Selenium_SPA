@@ -19,7 +19,7 @@ public class LoginPageTest extends BaseClass{
 	public void VerifyPageHomePageTitle() throws Throwable
 	{
 		WebDriverWait wait=new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//form[@name='aspnetFo']"))));
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//form[@name='aspnetForm']"))));
 		Reporter.log("Get the Title frome HomePage ");
 	String Actualresult=driver.getTitle();
 	

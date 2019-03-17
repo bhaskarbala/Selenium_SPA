@@ -5,11 +5,16 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 
 import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+
+import com.Spa.objectrepository.HomePageRepo;
 
 public class ListenerImple implements ITestListener {
 
@@ -64,6 +69,10 @@ public class ListenerImple implements ITestListener {
 		// TODO Auto-generated method stub
 		
 	}
+
+	
+	
+
 		}
 
 
