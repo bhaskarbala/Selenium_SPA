@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
   <reporter-output>
     <line>
       <![CDATA[To Connected to DataBase]]>
+    </line>
+    <line>
+      <![CDATA[Get a Url]]>
+    </line>
+    <line>
+      <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+    </line>
+    <line>
+      <![CDATA[Identify the Element in GUI and Stored WebElment ]]>
+    </line>
+    <line>
+      <![CDATA[Create Selecte Class and pass the WebElemnt reffence]]>
+    </line>
+    <line>
+      <![CDATA[Take Help of Select class reffence by using selectByIndex]]>
+    </line>
+    <line>
+      <![CDATA[click on the logout button]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
     </line>
     <line>
       <![CDATA[Get a Url]]>
@@ -17,108 +38,162 @@
       <![CDATA[Close the browser]]>
     </line>
     <line>
+      <![CDATA[Get a Url]]>
+    </line>
+    <line>
+      <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+    </line>
+    <line>
+      <![CDATA[Get the Title frome HomePage ]]>
+    </line>
+    <line>
+      <![CDATA[To compare to ActualResult and ExpectedResult in Homepaga]]>
+    </line>
+    <line>
+      <![CDATA[click on the logout button]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
+    </line>
+    <line>
       <![CDATA[Disconnected to Data Base]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47108" started-at="2019-03-11T15:54:43Z" finished-at="2019-03-11T15:55:30Z">
+  <suite name="Suite" duration-ms="147220" started-at="2019-03-26T01:32:23Z" finished-at="2019-03-26T01:34:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47108" started-at="2019-03-11T15:54:43Z" finished-at="2019-03-11T15:55:30Z">
+    <test name="Test" duration-ms="147220" started-at="2019-03-26T01:32:23Z" finished-at="2019-03-26T01:34:50Z">
       <class name="com.SpaSelenium.testScript.organizationPage">
-        <test-method status="PASS" signature="configBS()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@548e7350]" name="configBS" is-config="true" duration-ms="47" started-at="2019-03-11T15:54:43Z" finished-at="2019-03-11T15:54:43Z">
-          <reporter-output>
-            <line>
-              <![CDATA[To Connected to DataBase]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method status="PASS" signature="LunchBrowser()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@548e7350]" name="LunchBrowser" is-config="true" duration-ms="22393" started-at="2019-03-11T15:54:43Z" finished-at="2019-03-11T15:55:06Z">
+        <test-method status="PASS" signature="LunchBrowser()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@77cd7a0]" name="LunchBrowser" is-config="true" duration-ms="14640" started-at="2019-03-26T01:33:38Z" finished-at="2019-03-26T01:33:52Z">
           <reporter-output>
             <line>
               <![CDATA[Get a Url]]>
             </line>
           </reporter-output>
         </test-method> <!-- LunchBrowser -->
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@548e7350]" name="preCondition" is-config="true" duration-ms="7984" started-at="2019-03-11T15:55:06Z" finished-at="2019-03-11T15:55:14Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@77cd7a0]" name="preCondition" is-config="true" duration-ms="7001" started-at="2019-03-26T01:33:52Z" finished-at="2019-03-26T01:33:59Z">
           <reporter-output>
             <line>
               <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="organizationPageShouldDisplyed()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@548e7350]" name="organizationPageShouldDisplyed" duration-ms="31" started-at="2019-03-11T15:55:14Z" finished-at="2019-03-11T15:55:14Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.IllegalAccessException: Can not set static final org.openqa.selenium.WebElement field com.Spa.objectrepository.HomePageRepo.MastersLinkText to com.sun.proxy.$Proxy14]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.IllegalAccessException: Can not set static final org.openqa.selenium.WebElement field com.Spa.objectrepository.HomePageRepo.MastersLinkText to com.sun.proxy.$Proxy14
-at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:119)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:92)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:79)
-at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:65)
-at com.SpaSelenium.testScript.organizationPage.organizationPageShouldDisplyed(organizationPage.java:18)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.IllegalAccessException: Can not set static final org.openqa.selenium.WebElement field com.Spa.objectrepository.HomePageRepo.MastersLinkText to com.sun.proxy.$Proxy14
-at sun.reflect.UnsafeFieldAccessorImpl.throwFinalFieldIllegalAccessException(Unknown Source)
-at sun.reflect.UnsafeFieldAccessorImpl.throwFinalFieldIllegalAccessException(Unknown Source)
-at sun.reflect.UnsafeQualifiedStaticObjectFieldAccessorImpl.set(Unknown Source)
-at java.lang.reflect.Field.set(Unknown Source)
-at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:117)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method status="PASS" signature="organizationPageShouldDisplyed()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@77cd7a0]" name="organizationPageShouldDisplyed" duration-ms="12093" started-at="2019-03-26T01:33:59Z" finished-at="2019-03-26T01:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- organizationPageShouldDisplyed -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@548e7350]" name="postCondition" is-config="true" duration-ms="12524" started-at="2019-03-11T15:55:14Z" finished-at="2019-03-11T15:55:26Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@77cd7a0]" name="postCondition" is-config="true" duration-ms="1141" started-at="2019-03-26T01:34:11Z" finished-at="2019-03-26T01:34:13Z">
           <reporter-output>
             <line>
               <![CDATA[click on the logout button]]>
             </line>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="closeToBrowser()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@548e7350]" name="closeToBrowser" is-config="true" duration-ms="3785" started-at="2019-03-11T15:55:26Z" finished-at="2019-03-11T15:55:30Z">
+        <test-method status="PASS" signature="closeToBrowser()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@77cd7a0]" name="closeToBrowser" is-config="true" duration-ms="3363" started-at="2019-03-26T01:34:13Z" finished-at="2019-03-26T01:34:16Z">
           <reporter-output>
             <line>
               <![CDATA[Close the browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeToBrowser -->
-        <test-method status="PASS" signature="configAS()[pri:0, instance:com.SpaSelenium.testScript.organizationPage@548e7350]" name="configAS" is-config="true" duration-ms="0" started-at="2019-03-11T15:55:30Z" finished-at="2019-03-11T15:55:30Z">
+      </class> <!-- com.SpaSelenium.testScript.organizationPage -->
+      <class name="com.SpaSelenium.testScript.HomPageTest">
+        <test-method status="PASS" signature="configBS()[pri:0, instance:com.SpaSelenium.testScript.HomPageTest@4667ae56]" name="configBS" is-config="true" duration-ms="52" started-at="2019-03-26T01:32:23Z" finished-at="2019-03-26T01:32:23Z">
+          <reporter-output>
+            <line>
+              <![CDATA[To Connected to DataBase]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method status="PASS" signature="LunchBrowser()[pri:0, instance:com.SpaSelenium.testScript.HomPageTest@4667ae56]" name="LunchBrowser" is-config="true" duration-ms="34315" started-at="2019-03-26T01:32:23Z" finished-at="2019-03-26T01:32:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Get a Url]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LunchBrowser -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.SpaSelenium.testScript.HomPageTest@4667ae56]" name="preCondition" is-config="true" duration-ms="6443" started-at="2019-03-26T01:32:57Z" finished-at="2019-03-26T01:33:04Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="corporateNameEditDropDown()[pri:0, instance:com.SpaSelenium.testScript.HomPageTest@4667ae56]" name="corporateNameEditDropDown" duration-ms="29110" started-at="2019-03-26T01:33:04Z" finished-at="2019-03-26T01:33:33Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Identify the Element in GUI and Stored WebElment ]]>
+            </line>
+            <line>
+              <![CDATA[Create Selecte Class and pass the WebElemnt reffence]]>
+            </line>
+            <line>
+              <![CDATA[Take Help of Select class reffence by using selectByIndex]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- corporateNameEditDropDown -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.SpaSelenium.testScript.HomPageTest@4667ae56]" name="postCondition" is-config="true" duration-ms="1464" started-at="2019-03-26T01:33:33Z" finished-at="2019-03-26T01:33:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[click on the logout button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="closeToBrowser()[pri:0, instance:com.SpaSelenium.testScript.HomPageTest@4667ae56]" name="closeToBrowser" is-config="true" duration-ms="3577" started-at="2019-03-26T01:33:34Z" finished-at="2019-03-26T01:33:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeToBrowser -->
+        <test-method status="PASS" signature="configAS()[pri:0, instance:com.SpaSelenium.testScript.HomPageTest@4667ae56]" name="configAS" is-config="true" duration-ms="0" started-at="2019-03-26T01:34:50Z" finished-at="2019-03-26T01:34:50Z">
           <reporter-output>
             <line>
               <![CDATA[Disconnected to Data Base]]>
             </line>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.SpaSelenium.testScript.organizationPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.SpaSelenium.testScript.HomPageTest -->
+      <class name="com.SpaSelenium.testScript.LoginPageTest">
+        <test-method status="PASS" signature="LunchBrowser()[pri:0, instance:com.SpaSelenium.testScript.LoginPageTest@204f30ec]" name="LunchBrowser" is-config="true" duration-ms="14708" started-at="2019-03-26T01:34:16Z" finished-at="2019-03-26T01:34:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Get a Url]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LunchBrowser -->
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:com.SpaSelenium.testScript.LoginPageTest@204f30ec]" name="preCondition" is-config="true" duration-ms="6047" started-at="2019-03-26T01:34:31Z" finished-at="2019-03-26T01:34:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Create WebDriverWiat it will wait for Visiable of Element]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="VerifyPageHomePageTitle()[pri:0, instance:com.SpaSelenium.testScript.LoginPageTest@204f30ec]" name="VerifyPageHomePageTitle" duration-ms="210" started-at="2019-03-26T01:34:37Z" finished-at="2019-03-26T01:34:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Get the Title frome HomePage ]]>
+            </line>
+            <line>
+              <![CDATA[To compare to ActualResult and ExpectedResult in Homepaga]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyPageHomePageTitle -->
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:com.SpaSelenium.testScript.LoginPageTest@204f30ec]" name="postCondition" is-config="true" duration-ms="9876" started-at="2019-03-26T01:34:37Z" finished-at="2019-03-26T01:34:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[click on the logout button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="closeToBrowser()[pri:0, instance:com.SpaSelenium.testScript.LoginPageTest@204f30ec]" name="closeToBrowser" is-config="true" duration-ms="3157" started-at="2019-03-26T01:34:47Z" finished-at="2019-03-26T01:34:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeToBrowser -->
+      </class> <!-- com.SpaSelenium.testScript.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
